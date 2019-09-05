@@ -1,0 +1,33 @@
+{
+  "apikey": "<YOUR CLOUDFLARE API KEY>",
+  "email": "<YOUR CLOUDFLARE EMAIL>",
+  "defaultzones": [
+    {
+      "zone": "@",
+      "proxy": true
+    },
+    {
+      "zone": "www",
+      "proxy": true
+    }
+  ],
+  "websites": [
+    {
+      "domain": [
+        "mydomain1.com",
+        "mydomain2.com"
+      ]
+    },
+    {
+      "domain": [
+        "mycustomdomain.com"
+      ],
+      "zones": [
+        {
+          "zone": "noproxy",
+          "proxy": false
+        }
+      ]
+    }
+  ]
+}
